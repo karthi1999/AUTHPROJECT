@@ -1,5 +1,5 @@
 import { getUserByEmailQuery, updateSessionQuery, insertUserQuery, getUserByCredentialsQuery, getUserPass } from "../bdq/users.dbq.js";
-import store from "../store/redis/redis.js";
+import store from "../store/redis/index.js";
 import { isValidEmail, isValidPhone, isValidField, isValidQueryParam, handleUndefinedFields } from "../utilities/checkHandler.js";
 import { hashPassword, hashCompare } from "../utilities/hashData.js";
 
